@@ -34,6 +34,7 @@ PROMPT_TEMPLATE = """
 def dataframe_agent(openai_api_key, df, query):
     model = ChatOpenAI(model="gpt-4-turbo",
                        openai_api_key=openai_api_key,
+                       base_url='https://api.aigc369.com/v1',
                        temperature=0)
     agent = create_pandas_dataframe_agent(llm=model,
                                           df=df,
