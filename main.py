@@ -13,11 +13,11 @@ def create_chart(input_data, chart_type):
     elif chart_type == "scatter":
         st.scatter_chart(df_data)
 
-st.title("💡 CSV数据分析智能工具")
+st.title("💡 欢迎体验我的智能数据分析工具")
 
 with st.sidebar:
     openai_api_key = st.text_input("请输入OpenAI API密钥：", type="password")
-    st.markdown("[获取OpenAI API key](https://platform.openai.com/account/api-keys)")
+    st.markdown("[获取OpenAI API key](https://api.aigc369.com/register?aff=8WE9)")
 
 data = st.file_uploader("上传你的数据文件（CSV格式）：", type="csv")
 if data:
